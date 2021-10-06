@@ -40,4 +40,4 @@ Anis Tariq - tariqm16
 ## Acknowledgments
 
 Bootstrap template used:
-* [Blue ONEPAGE](https://l.messenger.com/l.php?u=https%3A%2F%2Fthemefisher.com%2Fproducts%2Fblue-free-onepage-responsive-corporate-template%2F&h=AT0edNulaxFFEI06T8pcwlRXKhcgYiBjn7HQjPhvk8c7ZLQ9K2GjElmrVNpYpn8tLVYlU_SUj66d-aT4iOd-OuoJTxfuONgHdFDeH8Y8Lp_3IITreeUsJayPIVYfLhqHtHv9FJYBUKE)
+* [Blue ONEPAGE](https://themefisher.com/products/blue-free-onepage-responsive-corporate-template/)
