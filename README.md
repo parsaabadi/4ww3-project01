@@ -33,9 +33,7 @@ git clone ..........
 Contributors names and contact info
 
 Parsa Abadi - abadip1
-Anis Tariq - tariqm16
-
-
+Mohammad-Anees Tariq (Anis) - tariqm16
 
 ## Acknowledgments
 
