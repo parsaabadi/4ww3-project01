@@ -9,9 +9,9 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Blue</title>		
+        <title>Blue One Page HTML Template</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="Blue One Page Creative Template">
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
         <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
         <meta name="author" content="Muhammad Morshed">
 		
@@ -41,52 +41,194 @@
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
 
-		<style>
-			.dropbutton {
-			  background-color: #F0FFFF;
-			  color: blue;
-			  padding: 15px;
-			  font-size: 20px;
-			  border: solid;
-			  cursor: pointer;
-			}
-			
-			.dropbutton:hover, .dropbutton:focus {
-			  background-color: #00bfff;
-			}
-			
-			
-			
-			
-			.dropdown {
-			  position: relative;
-			  display: inline-block;
-			  width: 0%;
-			  left: center;
-			  top: 10px;
-			}
-			
-			.dropdown-info{
-			  display: none;
-			  position: absolute;
-			  background-color: #f6f6f6;
-			  min-width: 230px;
-			  overflow: auto;
-			  border: 1px solid #ddd;
-			  z-index: 1;
-			}
-			
-			.dropdown-info a {
-			  color: black;
-			  padding: 12px 16px;
-			  text-decoration: none;
-			  display: block;
-			}
-			
-			.dropdown a:hover {background-color: #ddd;}
-			
-			.show {display: block;}
-			</style>
+        <!--search style css data -->
+        <style>
+.dropbutton {
+  background-color: #F0FFFF;
+  color: blue;
+  padding: 15px;
+  font-size: 20px;
+  border: solid;
+  cursor: pointer;
+}
+
+.dropbutton:hover, .dropbutton:focus {
+  background-color: #00bfff;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 0%;
+  left: center;
+  top: 10px;
+}
+
+.dropdown-info{
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-info a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.starColor {
+  color: green;
+}
+
+.firstHeading {
+  font-size: 25px;
+  margin-right: 30px;
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.lengthOfBar {
+  width: 105%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+
+
+.posMap{
+	overflow: hidden;
+  
+     border-radius: 100%;
+  
+}
+
+.barRating {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.barSpace {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+
+
+
+
+.columnSpace:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.textBar {
+  text-align: right;
+}
+
+
+
+
+.bar-5 {width: 54%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 27%; height: 18px; background-color: #663131;}
+.bar-3 {width: 9%; height: 18px; background-color: #2b2424;}
+.bar-2 {width: 3.6%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 13.5%; height: 18px; background-color: #f44336;}
+
+
+@media (max-width: 400px) {
+  .barRating, .barSpace {
+    width: 100%;
+  }
+  .textBar {
+    display: none;
+  }
+}
+
+.customerSettings img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.customerSettings {
+  border: 20px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.customerSettings span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.customerSettings::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+  .customerSettings {
+      text-align: center;
+  }
+  .customerSettings img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+
+
+
+
+
+
+input {
+    margin: .1rem;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+
+
+
+
+
+</style>
+<!-- end of search related css data -->
+
+<!-- start of individual sample page (3) -->
+
+
+
 
     </head>
 	
@@ -117,7 +259,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="#body">Blue</a>
+						<a href="#body">YekYak</a>
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -126,11 +268,11 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">Home</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#service">Search</a></li>
+                        <li><a href="#portfolio">Individual object Page</a></li>
                         <li><a href="#testimonials">Testimonial</a></li>
                         <li><a href="#price">price</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Register</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -159,95 +301,22 @@
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2 class="animated fadeInDown">Welcome to YekYak</h2>
+                                <span class="animated fadeInDown">You may scroll through the pages below accordingly</span>
+                                
                             </div>
                         </div>
 						
 					</div>
 					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 					
-						<div class="bg-img bg-img-2"></div>
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2>BLUE Onepage Website</h2>
-                                <span>Clean and Professional one page Website</span>
-                                <a href="#" class="btn btn-blue btn-effect">Join US</a>
-                            </div>
-                        </div>
-						
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						
-						<div class="bg-img bg-img-3"></div>
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2>BLUE Onepage Website</h2>
-                                <span>Clean and Professional one page Website</span>
-                                <a href="#" class="btn btn-blue btn-effect">Join US</a>
-                            </div>
-                        </div>
-
-					</div>
-
-				</div><!-- /sl-slider -->
-
-                <!-- 
-                <nav id="nav-arrows" class="nav-arrows">
-                    <span class="nav-arrow-prev">Previous</span>
-                    <span class="nav-arrow-next">Next</span>
-                </nav>
-                -->
-                
-                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
-                    <a href="javascript:;" class="sl-prev">
-                        <i class="fa fa-angle-left fa-3x"></i>
-                    </a>
-                    <a href="javascript:;" class="sl-next">
-                        <i class="fa fa-angle-right fa-3x"></i>
-                    </a>
-                </nav>
-                
-
-				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
+              
 		</section>
 		
         <!--
         End Home SliderEnd
         ==================================== -->
 			
-			<!-- about section -->
-			<section id="about" >
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 wow animated fadeInLeft">
-							<div class="recent-works">
-								<body>
-									
-									
-									
-									<p><i>Dont forget to use the search tool below.<i></p>
-									<div class="dropdown">
-									  <button onclick="toBeImplemented()" class="dropbutton">Finder</button>
-									  <div id="myDropdown" class="dropdown-info">
-										<input type="text" placeholder="&#xf002; Search by Category..." id="myText" >
-										<a href="#Category">Sort By Rating</a>
-									  </div>
-									</div>
-									
-									</body>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end about section -->
+			
 			
 			
 			<!-- Service section -->
@@ -256,53 +325,22 @@
 					<div class="row">
 					
 						<div class="sec-title text-center">
-							<h2 class="wow animated bounceInLeft">Service</h2>
-							<p class="wow animated bounceInRight">The Key Features of our Job</p>
+							<h2 class="wow animated bounceInLeft">Search Tool</h2>
+							<p class="wow animated bounceInRight">Please click on the finder icon to progress accordingly.</p>
 						</div>
 						
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-home fa-3x"></i>
-								</div>
-								<h3>Support</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-tasks fa-3x"></i>
-								</div>
-								<h3>Well Documented</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-clock-o fa-3x"></i>
-								</div>
-								<h3>Design UI/UX</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-heart fa-3x"></i>
-								</div>
-								
-								<h3>Web Security</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>							
-							</div>
-						</div>
 						
-					</div>
-				</div>
+
+
+<p><i>Dont forget to use the search tool below.<i></p>
+<div class="dropdown">
+  <button onclick="toBeImplemented()" class="dropbutton">Finder</button>
+  <div id="myDropdown" class="dropdown-info">
+    <input type="text" placeholder="&#xf002; Search by Category..." id="myText" >
+    <a href="#Category">Sort By Rating</a>
+  </div>
+</div>
+
 			</section>
 			<!-- end Service section -->
 			
@@ -312,87 +350,98 @@
 					<div class="row">
 					
 						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>FEATURED PROJECTS</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						</div>
-						
+							<span class="firstHeading"><b>User Ratings<b></span>
+<span class="fa fa-star starColor"></span>
+<span class="fa fa-star starColor"></span>
+<span class="fa fa-star starColor"></span>
+<span class="fa fa-star starColor"></span>
+<span class="fa fa-star"></span>
+<p><i>4.0 average based on 100 reviews.<i></p>
+<hr style="border:1.5px solid #e3a3a3">
 
-						<ul class="project-wrapper wow animated fadeInUp">
-							<li class="portfolio-item">
-								<img src="img/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Araund The world" data-fancybox-group="works" href="img/portfolio/item.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street" href="img/slider/banner.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="img/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="img/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="img/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-							
-							<li class="portfolio-item">
-								<img src="img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
-								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
-								</figcaption>
-								<ul class="external">
-									<li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="img/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
-									<li><a href=""><i class="fa fa-link"></i></a></li>
-								</ul>
-							</li>
-						</ul>
-						
-					</div>
-				</div>
+<div class="columnSpace">
+  <div class="barRating">
+    <div>5 stars</div>
+  </div>
+  <div class="barSpace">
+    <div class="lengthOfBar">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="barRating textBar">
+    <div>50</div>
+  </div>
+  <div class="barRating">
+    <div>4 stars</div>
+  </div>
+  <div class="barSpace">
+    <div class="lengthOfBar">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="barRating textBar">
+    <div>20</div>
+  </div>
+  <div class="barRating">
+    <div>3 stars</div>
+  </div>
+  <div class="barSpace">
+    <div class="blengthOfBar">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="barRating textBar">
+    <div>15</div>
+  </div>
+  <div class="barRating">
+    <div>2 stars</div>
+  </div>
+  <div class="barSpace">
+    <div class="lengthOfBar">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="barRating textBar">
+    <div>5</div>
+  </div>
+  <div class="barRating">
+    <div>1 star</div>
+  </div>
+  <div class="barSpace">
+    <div class="lengthOfBar">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="barRating textBar">
+    <div>10</div>
+  </div>
+</div>
+
+
+
+<h2>Customer Testimonials</h2>
+
+
+<div class="customerSettings">
+  <img src="/Users/parsa/Desktop/blue-premium/themes/blue-premium/img/c1.jpg" alt="Avatar" style="width:90px">
+  <p><span>Anis Tariq.</span> Customer at Pink's Burger place.</p>
+  <p>#1 BEST BURGER IN THE CITY!!!!.</p>
+</div>
+
+ 
+
+
+<div class="customerSettings">
+  <img src="/Users/parsa/Desktop/blue-premium/themes/blue-premium/img/c2.jpg" alt="Avatar" style="width:90px">
+  <p><span>Parsa Abadi.</span> Customer at Pink's Burger place.</p>
+  <p>You have got to try their milkshakes, the best.</p>
+</div>
+
+ <div class="posMap">
+    <img src="/Users/parsa/Desktop/blue-premium/themes/blue-premium/img/map.png" alt="mapOfPlace" width="800" height="600" >
+  </div>
+
+
 			</section>
 			<!-- end portfolio section -->
 			
@@ -449,8 +498,11 @@
 						<div class="col-md-4 wow animated fadeInUp">
 							<div class="price-table text-center">
 								<span>Silver</span>
-								<div class="value"><span>Rs 100</span><span></span><br>
-                                <span>month</span> </div>
+								<div class="value">
+									<span>$</span>
+									<span>24,35</span><br>
+									<span>month</span>
+								</div>
 								<ul>
 									<li>No Bonus Points</li>
 									<li>No Bonus Points</li>
@@ -465,7 +517,8 @@
 							<div class="price-table featured text-center">
 								<span>Gold</span>
 								<div class="value">
-									<span>Rs 200</span><span></span><br>
+									<span>$</span>
+									<span>50,00</span><br>
 									<span>month</span>
 								</div>
 								<ul>
@@ -482,7 +535,8 @@
 							<div class="price-table text-center">
 								<span>Diamond</span>
 								<div class="value">
-									<span>Rs 300</span><span></span><br>
+									<span>$</span>
+									<span>123,12</span><br>
 									<span>month</span>
 								</div>
 								<ul>
@@ -501,15 +555,7 @@
 			<!-- end Price section -->
 			
 			<!-- Social section -->
-			<section id="social" class="parallax">
-				<div class="overlay">
-					<div class="container">
-						<div class="row">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>FOLLOW US</h2>
-								<p>Beautifully simple follow buttons to help you get followers on</p>
-							</div>
+		
 							
 							<ul class="social-button">
 								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
@@ -529,80 +575,47 @@
 					<div class="row">
 						
 						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>Contact</h2>
-							<p>Leave a Message</p>
-						</div>
-						
-						
-						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="#" method="post">
-								<div class="input-field">
-									<input type="text" name="name" class="form-control" placeholder="Your Name...">
-								</div>
-								<div class="input-field">
-									<input type="email" name="email" class="form-control" placeholder="Your Email...">
-								</div>
-								<div class="input-field">
-									<input type="text" name="subject" class="form-control" placeholder="Subject...">
-								</div>
-								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
-								</div>
-						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
-							</form>
-						</div>
-						
-						<div class="col-md-5 wow animated fadeInRight">
-							<address class="contact-details">
-								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>Giri Designs<span>50, Thiruvoodal Street,</span> <span>Thiruvannamalai.</span></p><br>
-								<p><i class="fa fa-phone"></i>+91 94884 87853</p>
-								<p><i class="fa fa-envelope"></i>giridesigns5@gmail.com</p>
-							</address>
-						</div>
-			
-					</div>
-				</div>
+							 <h1>Registration Page</h1>
+<div>
+    <label for="username"><b>Username:<b></label>
+    <input type="text" id="username" name="username">
+</div>
+
+<div>
+    <label for="pass"><b>Password (8 characters minimum):<b></label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+
+<label>Are you over the age of 18?
+  <input type="checkbox" >
+</label>
+
+<p>Select Gender Type:</p>
+
+<div>
+  <input type="radio" id="male" name="gen" value="male"
+         checked>
+  <label for="male">Male</label>
+</div>
+
+<div>
+  <input type="radio" id="female" name="gen" value="female">
+  <label for="female">Female</label>
+</div>
+
+<div>
+  <input type="radio" id="other" name="gen" value="other">
+  <label for="other">Other</label>
+</div>
 			</section>
 			<!-- end Contact section -->
 			
-			<section id="google-map">
-				<div id="map-canvas" class="wow animated fadeInUp"></div>
-			</section>
+			
 		
 		</main>
 		
-		<footer id="footer">
-			<div class="container">
-				<div class="row text-center">
-					<div class="footer-content">
-						<div class="wow animated fadeInDown">
-							<p>newsletter signup</p>
-							<p>Get Cool Stuff! We hate spam!</p>
-						</div>
-						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-							<div class="input-field">
-								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-								<button type="submit" class="submit-icon">
-									<i class="fa fa-paper-plane fa-lg"></i>
-								</button>
-							</div>
-						</form>
-						<div class="footer-social">
-							<ul>
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="https://www.youtube.com/channel/UC4yzoGuKkCL_8FzI-B-x83A"><i class="fa fa-youtube fa-3x"></i></a></li>
-							</ul>
-						</div>
-						
-						<p>Blue &copy; Copyright 2016. Design and Developed By<a href="http://srikrishnacommunication.com/Giridesigns.html"> Giri Designs</a> </p>
-					</div>
-				</div>
-			</div>
-		</footer>
+		
 		
 		<!-- Essential jQuery Plugins
 		================================================== -->
@@ -614,8 +627,7 @@
         <script src="js/jquery.singlePageNav.min.js"></script>
 		<!-- jquery.fancybox.pack -->
         <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- Google Map API -->
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		
 		<!-- Owl Carousel -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- jquery easing -->
