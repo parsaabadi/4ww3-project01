@@ -4,31 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
     <title>Document</title>
 
 
+    <style>
+    	
+        label {
+            display: block;
+            font: .5rem 'Times New Roman', serif;
+        }
+        
+        input {
+            margin: .1rem;
+        }
+        
+        input[type='submit'],
+        label {
+            margin-top: 1rem;
+        }
+        
+        p,
+        label {
+            
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+        
+    </style>
+
 </head>
 
+<h1>Object Submissions Page</h1>
+<div>
+    <label for="username"><b>Object Name:<b></label>
+    <input type="text" id="username" name="username">
+</div>
 
-<body>
-    <h1>
-        Animation Input
-    </h1>
-    <div>
-        <input type="text" name="name" autocomplete="off" required/>
-        <label for="name" class="label-name">
-            <span class="content-name">Name</span>
-        </label>
-        <input type="text" name="name" autocomplete="off" required/>
-        <label for="name" class="label-name">
-            <span class="content-name">Date</span>
-        </label>
-        <input type="text" name="name" autocomplete="off" required/>
-        <label for="name" class="label-name">
-            <span class="content-name">latitude</span>
-        </label>
-    </div>
-    
+<div>
+    <label for="description"><b>Description:<b></label>
+    <input type="text" id="description" name="description">
+</div>
+
+<div>
+    <label for="location"><b>Location (Latitude, Longitude):<b></label>
+    <input type="text" id="location" name="location">
+</div>
+
+<div>
+    <label for="img">Upload Image:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    <input type="submit">
+</div>
+
+
 </body>
 </html>
