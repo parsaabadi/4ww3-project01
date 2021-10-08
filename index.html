@@ -1,655 +1,330 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-    <head>
-    	<!-- meta character set -->
-        <meta charset="utf-8">
-		<!-- Always force latest IE rendering engine or request Chrome Frame -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Blue One Page HTML Template</title>		
-		<!-- Meta Description -->
-        <meta name="description" content="Blue One Page Creative HTML5 Template">
-        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
-        <meta name="author" content="Muhammad Morshed">
-		
-		<!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- CSS
-		================================================== -->
-		
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		
-		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/slit-slider.css">
-		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/animate.css">
-		<!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/main.css">
-
-		<!-- Modernizer Script for old Browsers -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
-
-        <!--search style css data -->
-
-
-        <style>
- 
-
-          img{
-            width: 400px;
-            height: 300px;
-          }
-
-          table, th, td {
-            border:1px solid black;
-          }
-           
-              label {
-                  display: block;
-                  font: .9rem 'Fira Sans', sans-serif;
-              }
-           
-              input[type='submit'],
-              label {
-                  margin-top: 1rem;
-              }
-           
-              p,
-              label {
-                  font: 1rem 'Fira Sans', sans-serif;
-              }
-           
-              input {
-                  margin: .4rem;
-              }
-           
-                  </style>
-        <style>
-.dropbutton {
-  background-color: #F0FFFF;
-  color: blue;
-  padding: 15px;
-  font-size: 20px;
-  border: solid;
-  cursor: pointer;
-}
-
-.dropbutton:hover, .dropbutton:focus {
-  background-color: #00bfff;
-}
-
-
-
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 0%;
-  left: center;
-  top: 10px;
-}
-
-.dropdown-info{
-  display: none;
-  position: absolute;
-  background-color: #f6f6f6;
-  min-width: 230px;
-  overflow: auto;
-  border: 1px solid #ddd;
-  z-index: 1;
-}
-
-.dropdown-info a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-.starColor {
-  color: green;
-}
-
-.firstHeading {
-  font-size: 25px;
-  margin-right: 30px;
-}
-
-.fa {
-  font-size: 20px;
-}
-
-.lengthOfBar {
-  width: 105%;
-  background-color: #f1f1f1;
-  text-align: center;
-  color: white;
-}
-
-
-
-.posMap{
-	overflow: hidden;
-  
-     border-radius: 100%;
-  
-}
-
-.barRating {
-  float: left;
-  width: 15%;
-  margin-top:10px;
-}
-
-.barSpace {
-  margin-top:10px;
-  float: left;
-  width: 70%;
-}
-
-
-
-
-
-.columnSpace:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.textBar {
-  text-align: right;
-}
-
-
-
-
-.bar-5 {width: 54%; height: 18px; background-color: #04AA6D;}
-.bar-4 {width: 27%; height: 18px; background-color: #663131;}
-.bar-3 {width: 9%; height: 18px; background-color: #2b2424;}
-.bar-2 {width: 3.6%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 13.5%; height: 18px; background-color: #f44336;}
-
-
-@media (max-width: 400px) {
-  .barRating, .barSpace {
-    width: 100%;
-  }
-  .textBar {
-    display: none;
-  }
-}
-
-.customerSettings img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-
-.customerSettings {
-  border: 20px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0
-}
-
-.customerSettings span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
-.customerSettings::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-
-
-
-@media (max-width: 500px) {
-  .customerSettings {
-      text-align: center;
-  }
-  .customerSettings img {
-      margin: auto;
-      float: none;
-      display: block;
-  }
-}
-
-
-
-
-
-
-
-input {
-    margin: .1rem;
-}
-
-input[type='submit'],
-label {
-    margin-top: 1rem;
-}
-
-
-
-
-
-</style>
-<!-- end of search related css data -->
-
-<!-- start of individual sample page (3) -->
-
-
-
-
-    </head>
-	
-    <body id="body">
-
-		<!-- preloader -->
-		<div id="preloader">
-            <div class="loder-box">
-            	<div class="battery"></div>
+<!--[if lt IE 7]>      
+<html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+<!--[if IE 7]>         
+   <html lang="en" class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+<!--[if IE 8]>         
+      <html lang="en" class="no-js lt-ie9">
+         <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+  <!-- meta character set -->
+  <meta charset="utf-8"><!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blue One Page HTML Template</title><!-- Meta Description -->
+  <meta name="description" content="Blue One Page Creative HTML5 Template">
+  <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+  <meta name="author" content="Muhammad Morshed"><!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- CSS
+                  ================================================== -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'><!-- Fontawesome Icon font -->
+  <link rel="stylesheet" href="css/font-awesome.min.css"><!-- bootstrap.min -->
+  <link rel="stylesheet" href="css/jquery.fancybox.css"><!-- bootstrap.min -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap.min -->
+  <link rel="stylesheet" href="css/owl.carousel.css"><!-- bootstrap.min -->
+  <link rel="stylesheet" href="css/slit-slider.css"><!-- bootstrap.min -->
+  <link rel="stylesheet" href="css/animate.css"><!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css"><!-- Modernizer Script for old Browsers -->
+
+  <script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body id="body">
+  <!-- preloader -->
+  <div id="preloader">
+    <div class="loder-box">
+      <div class="battery"></div>
+    </div>
+  </div><!-- end preloader -->
+  <!--
+                  Fixed Navigation
+                  ==================================== -->
+  <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- responsive nav button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span></button> <!-- /responsive nav button -->
+         <!-- logo -->
+        <h1 class="navbar-brand"><a href="#body">YekYak</a></h1><!-- /logo -->
+      </div><!-- main nav -->
+      <nav class="collapse navbar-collapse navbar-right" >
+        <ul id="nav" class="nav navbar-nav">
+          <li>
+            <a href="#body">Home</a>
+          </li>
+          <li>
+            <a href="#service">Search</a>
+          </li>
+          <li>
+            <a href="#portfolio">Individual object Page</a>
+          </li>
+          <li>
+            <a href="#testimonials">Result Sample</a>
+          </li>
+          <li>
+            <a href="#price">Submission</a>
+          </li>
+          <li>
+            <a href="#contact">Register</a>
+          </li>
+        </ul>
+      </nav><!-- /main nav -->
+    </div>
+  </header><!--
+                  End Fixed Navigation
+                  ==================================== -->
+  <main class="site-content" >
+    <!--
+                     Home Slider
+                     ==================================== -->
+    <section id="home-slider">
+      <div id="slider" class="sl-slider-wrapper">
+        <div class="sl-slider">
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="bg-img bg-img-1"></div>
+            <div class="slide-caption">
+              <div class="caption-content">
+                <h2 class="animated fadeInDown">Welcome to YekYak</h2><span class="animated fadeInDown">You may scroll through the pages below accordingly</span>
+              </div>
             </div>
-		</div>
-		<!-- end preloader -->
-
-        <!--
-        Fixed Navigation
-        ==================================== -->
-        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-                    </button>
-					<!-- /responsive nav button -->
-					
-					<!-- logo -->
-					<h1 class="navbar-brand">
-						<a href="#body">YekYak</a>
-					</h1>
-					<!-- /logo -->
+          </div>
+        </div>
+      </div>
+    </section><!--
+                     End Home SliderEnd
+                     ==================================== -->
+    <!-- Service section -->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="sec-title text-center">
+            <h2 class="wow animated bounceInLeft">Search Tool</h2>
+            <p class="wow animated bounceInRight">Please click on the finder icon to progress accordingly.</p>
+          </div>
+          <p>Dont forget to use the search tool below</p>
+          <div class="dropdown">
+            <button onclick="toBeImplemented()" class="dropbutton">Finder</button>
+            <div id="myDropdown" class="dropdown-info">
+              <input type="text" placeholder="Search by Category..." id="myText"> <a href="#Category">Sort By Rating</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- end Service section -->
+    <!-- portfolio section -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="sec-title text-center wow animated fadeInDown">
+            <span class="firstHeading"><b>User Ratings</b></span>
+            <p><i>4.0 average based on 100 reviews.</i></p>
+            <hr style="border:1.5px solid #e3a3a3">
+            <div class="columnSpace">
+              <div class="barRating">
+                <div>
+                  5 stars
                 </div>
-
-				<!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <ul id="nav" class="nav navbar-nav">
-                        <li><a href="#body">Home</a></li>
-                        <li><a href="#service">Search</a></li>
-                        <li><a href="#portfolio">Individual Object </a></li>
-                        <li><a href="#testimonials">Results Sample</a></li>
-                        <li><a href="#price">Submission</a></li>
-                        <li><a href="#contact">Register</a></li>
-                    </ul>
-                </nav>
-				<!-- /main nav -->
-				
+              </div>
+              <div class="barSpace">
+                <div class="lengthOfBar">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="barRating textBar">
+                <div>
+                  50
+                </div>
+              </div>
+              <div class="barRating">
+                <div>
+                  4 stars
+                </div>
+              </div>
+              <div class="barSpace">
+                <div class="lengthOfBar">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="barRating textBar">
+                <div>
+                  20
+                </div>
+              </div>
+              <div class="barRating">
+                <div>
+                  3 stars
+                </div>
+              </div>
+              <div class="barSpace">
+                <div class="blengthOfBar">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="barRating textBar">
+                <div>
+                  15
+                </div>
+              </div>
+              <div class="barRating">
+                <div>
+                  2 stars
+                </div>
+              </div>
+              <div class="barSpace">
+                <div class="lengthOfBar">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="barRating textBar">
+                <div>
+                  5
+                </div>
+              </div>
+              <div class="barRating">
+                <div>
+                  1 star
+                </div>
+              </div>
+              <div class="barSpace">
+                <div class="lengthOfBar">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="barRating textBar">
+                <div>
+                  10
+                </div>
+              </div>
             </div>
-        </header>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-		
-		<main class="site-content" role="main">
-		
-        <!--
-        Home Slider
-        ==================================== -->
-		
-		<section id="home-slider">
-            <div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-
-						<div class="bg-img bg-img-1"></div>
-
-						<div class="slide-caption">
-                            <div class="caption-content">
-                                <h2 class="animated fadeInDown">Welcome to YekYak</h2>
-                                <span class="animated fadeInDown">You may scroll through the pages below accordingly</span>
-                                
-                            </div>
-                        </div>
-						
-					</div>
-					
-					
-              
-		</section>
-		
-        <!--
-        End Home SliderEnd
-        ==================================== -->
-			
-			
-			
-			
-			<!-- Service section -->
-			<section id="service">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center">
-							<h2 class="wow animated bounceInLeft">Search Tool</h2>
-							<p class="wow animated bounceInRight">Please click on the finder icon to progress accordingly.</p>
-						</div>
-						
-						
-
-
-<p><i>Dont forget to use the search tool below.<i></p>
-<div class="dropdown">
-  <button onclick="toBeImplemented()" class="dropbutton">Finder</button>
-  <div id="myDropdown" class="dropdown-info">
-    <input type="text" placeholder="&#xf002; Search by Category..." id="myText" >
-    <a href="#Category">Sort By Rating</a>
-  </div>
-</div>
-
-			</section>
-			<!-- end Service section -->
-			
-			<!-- portfolio section -->
-			<section id="portfolio">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<span class="firstHeading"><b>User Ratings<b></span>
-<span class="fa fa-star starColor"></span>
-<span class="fa fa-star starColor"></span>
-<span class="fa fa-star starColor"></span>
-<span class="fa fa-star starColor"></span>
-<span class="fa fa-star"></span>
-<p><i>4.0 average based on 100 reviews.<i></p>
-<hr style="border:1.5px solid #e3a3a3">
-
-<div class="columnSpace">
-  <div class="barRating">
-    <div>5 stars</div>
-  </div>
-  <div class="barSpace">
-    <div class="lengthOfBar">
-      <div class="bar-5"></div>
-    </div>
-  </div>
-  <div class="barRating textBar">
-    <div>50</div>
-  </div>
-  <div class="barRating">
-    <div>4 stars</div>
-  </div>
-  <div class="barSpace">
-    <div class="lengthOfBar">
-      <div class="bar-4"></div>
-    </div>
-  </div>
-  <div class="barRating textBar">
-    <div>20</div>
-  </div>
-  <div class="barRating">
-    <div>3 stars</div>
-  </div>
-  <div class="barSpace">
-    <div class="blengthOfBar">
-      <div class="bar-3"></div>
-    </div>
-  </div>
-  <div class="barRating textBar">
-    <div>15</div>
-  </div>
-  <div class="barRating">
-    <div>2 stars</div>
-  </div>
-  <div class="barSpace">
-    <div class="lengthOfBar">
-      <div class="bar-2"></div>
-    </div>
-  </div>
-  <div class="barRating textBar">
-    <div>5</div>
-  </div>
-  <div class="barRating">
-    <div>1 star</div>
-  </div>
-  <div class="barSpace">
-    <div class="lengthOfBar">
-      <div class="bar-1"></div>
-    </div>
-  </div>
-  <div class="barRating textBar">
-    <div>10</div>
-  </div>
-</div>
-
-
-
-<h2>Customer Testimonials</h2>
-
-
-<div class="customerSettings">
-  <img src="/Users/parsa/Desktop/blue-premium/themes/blue-premium/img/c1.jpg" alt="Avatar" style="width:90px">
-  <p><span>Anis Tariq.</span> Customer at Pink's Burger place.</p>
-  <p>#1 BEST BURGER IN THE CITY!!!!.</p>
-</div>
-
- 
-
-
-<div class="customerSettings">
-  <img src="/Users/parsa/Desktop/blue-premium/themes/blue-premium/img/c2.jpg" alt="Avatar" style="width:90px">
-  <p><span>Parsa Abadi.</span> Customer at Pink's Burger place.</p>
-  <p>You have got to try their milkshakes, the best.</p>
-</div>
-
- <div class="posMap">
-    <img src="/Users/parsa/Desktop/blue-premium/themes/blue-premium/img/map.png" alt="mapOfPlace" width="800" height="600" >
-  </div>
-
-
-			</section>
-			<!-- end portfolio section -->
-			
-			<!-- Testimonial section -->
-			<section id="testimonials" class="parallax">
-				<div class="overlay">
-					<div class="container">
-						<div class="row">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>Results Sample</h2>
-							</div>
-							
-              <h2>Food Places Near Me</h2>
- 
- 
-<table>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Location</th>
-    </tr>
-    <tr>
-      <td>Pink's Burger </td>
-      <td>905-188-1467</td>
-      <th>1.2km away</th>
- 
-    </tr>
-    <tr>
-      <td>Subway</td>
-      <td>905-878-2347</td>
-      <th>2.3km away</th>
- 
-    </tr>
-  </table>
- 
- 
-<img src="pictures/mapofPinks.png" alt="Map of Pinks">
-<img src="pictures/mapofSubway.png" alt="Map of Subway ">
-						
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end Testimonial section -->
-			
-			<!-- Price section -->
-			<section id="price">
-				<div class="container">
-					<div class="row">
-					
-						<div class="sec-title text-center wow animated fadeInDown">
-							<h2>Submission</h2>
-							<p>Our price for your company</p>
-
-              <div>
-                <label for="username"><b>Object Name:<b></label>
-                <input type="text" id="username" name="username">
+            <h2>Customer Testimonials</h2>
+            <div class="customerSettings">
+              <img src="carpics/c1.jpg" alt="Avatar">
+              <p><span>Anis Tariq.</span> Customer at Pink's Burger place.</p>
+              <p>#1 BEST BURGER IN THE CITY!!!!.</p>
             </div>
-            
+            <div class="customerSettings">
+              <img src="carpics/c2.jpg" alt="Avatar">
+              <p><span>Parsa Abadi.</span> Customer at Pink's Burger place.</p>
+              <p>You have got to try their milkshakes, the best.</p>
+            </div>
+            <div class="posMap"><img src="img/map.png" alt="mapOfPlace"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- end portfolio section -->
+    <!-- Testimonial section -->
+    <section id="testimonials" class="parallax">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+          <div class="sec-title text-center white wow animated fadeInDown">
+            <h1>Result Sample Page</h1>
+          </div>
+          <h2>Food Places Near Me</h2>
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Location</th>
+            </tr>
+            <tr>
+              <td>Pink's Burger</td>
+              <td>905-188-1467</td>
+              <th>1.2km away</th>
+            </tr>
+            <tr>
+              <td>Subway</td>
+              <td>905-878-2347</td>
+              <th>2.3km away</th>
+            </tr>
+          </table><img src="pic/mapofPinks.png" alt="Map of Pinks"> <img src="pic/mapofPinks.png" alt="Map of Subway "></div>
+        </div>
+      </div>
+    </section><!-- end Testimonial section -->
+    <!-- Price section -->
+    <section id="price">
+      <div class="container">
+        <div class="row">
+          <div class="sec-title text-center wow animated fadeInDown">
+            <h1>Object Submissions Page</h1>
             <div>
-                <label for="description"><b>Description:<b></label>
-                <input type="text" id="description" name="description">
+              <label for="username"><b>Object Name:</b></label> <input type="text" id="usernames" name="username">
             </div>
-            
             <div>
-                <label for="location"><b>Location (Latitude, Longitude):<b></label>
-                <input type="text" id="location" name="location">
+              <label for="description"><b>Description:</b></label> <input type="text" id="description" name="description">
             </div>
-            
             <div>
-                <label for="img">Upload Image:</label>
-                <input type="file" id="img" name="img" accept="image/*">
-                <input type="submit">
+              <label for="location"><b>Location (Latitude, Longitude):</b></label> <input type="text" id="location" name="location">
             </div>
-
-
-						
-						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.8s">
-							<div class="price-table text-center">
-
-
-							</div>
-						</div>
-		
-					</div>
-				</div>
-			</section>
-			<!-- end Price section -->
-			
-			<!-- Social section -->
-		
-							
-							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
-							</ul>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end Social section -->
-			
-			<!-- Contact section -->
-			<section id="contact" >
-				<div class="container">
-					<div class="row">
-						
-						<div class="sec-title text-center wow animated fadeInDown">
-							 <h1>Registration Page</h1>
-<div>
-    <label for="username"><b>Username:<b></label>
-    <input type="text" id="username" name="username">
-</div>
-
-<div>
-    <label for="pass"><b>Password (8 characters minimum):<b></label>
-    <input type="password" id="pass" name="password"
-           minlength="8" required>
-</div>
-
-<label>Are you over the age of 18?
-  <input type="checkbox" >
-</label>
-
-<p>Select Gender Type:</p>
-
-<div>
-  <input type="radio" id="male" name="gen" value="male"
-         checked>
-  <label for="male">Male</label>
-</div>
-
-<div>
-  <input type="radio" id="female" name="gen" value="female">
-  <label for="female">Female</label>
-</div>
-
-<div>
-  <input type="radio" id="other" name="gen" value="other">
-  <label for="other">Other</label>
-</div>
-			</section>
-			<!-- end Contact section -->
-			
-			
-		
-		</main>
-		
-		
-		
-		<!-- Essential jQuery Plugins
-		================================================== -->
-		<!-- Main jQuery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
-		<!-- Single Page Nav -->
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		
-		<!-- Owl Carousel -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- jquery easing -->
-        <script src="js/jquery.easing.min.js"></script>
-        <!-- Fullscreen slider -->
-        <script src="js/jquery.slitslider.js"></script>
-        <script src="js/jquery.ba-cond.min.js"></script>
-		<!-- onscroll animation -->
-        <script src="js/wow.min.js"></script>
-		<!-- Custom Functions -->
-        <script src="js/main.js"></script>
-    </body>
+            <div>
+              <label for="img">Upload Image:</label> <input type="file" id="img" name="img" accept="image/*"> <input type="submit">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- end Price section -->
+    <!-- Social section -->
+    <ul class="social-button">
+      <li class="wow animated zoomIn">
+        <a href="#"></a>
+      </li>
+      <li class="wow animated zoomIn" data-wow-delay="0.3s">
+        <a href="#"></a>
+      </li>
+      <li class="wow animated zoomIn" data-wow-delay="0.6s">
+        <a href="#"></a>
+      </li>
+    </ul><!-- end Social section -->
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="sec-title text-center wow animated fadeInDown">
+            <h1>Registration Page</h1>
+            <div>
+              <label for="username"><b>Username:</b></label> <input type="text" id="username" name="username">
+            </div>
+            <div>
+              <label for="pass"><b>Password (8 characters minimum):</b></label> <input type="password" id="pass" name="password" minlength="8" required="">
+            </div><label>Are you over the age of 18? <input type="checkbox"></label>
+            <p>Select Gender Type:</p>
+            <div>
+              <input type="radio" id="male" name="gen" value="male" checked> <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gen" value="female"> <label for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" id="other" name="gen" value="other"> <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- end Contact section -->
+  </main><!-- Essential jQuery Plugins
+                  ================================================== -->
+  <!-- Main jQuery -->
+  <script src="js/jquery-1.11.1.min.js"></script> <!-- Twitter Bootstrap -->
+   
+  <script src="js/bootstrap.min.js"></script> <!-- Single Page Nav -->
+   
+  <script src="js/jquery.singlePageNav.min.js"></script> <!-- jquery.fancybox.pack -->
+   
+  <script src="js/jquery.fancybox.pack.js"></script> <!-- Owl Carousel -->
+   
+  <script src="js/owl.carousel.min.js"></script> <!-- jquery easing -->
+   
+  <script src="js/jquery.easing.min.js"></script> <!-- Fullscreen slider -->
+   
+  <script src="js/jquery.slitslider.js"></script> 
+  <script src="js/jquery.ba-cond.min.js"></script> <!-- onscroll animation -->
+   
+  <script src="js/wow.min.js"></script> <!-- Custom Functions -->
+   
+  <script src="js/main.js"></script>
+</body>
 </html>
