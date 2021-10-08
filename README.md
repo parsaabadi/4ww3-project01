@@ -10,7 +10,7 @@ Simple overview of use/purpose.
 
 ### Dependencies
 
-* Dependencies that are required for the pages such as images are located in the pictures file. 
+* Dependencies that are required for the pages are all located in the same directory.
 
 
 ### Access
