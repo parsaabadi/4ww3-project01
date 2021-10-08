@@ -16,7 +16,7 @@ Simple overview of use/purpose.
 ### Access
 
 * The website can be accessed through the IP address: http://18.222.10.192/
-*Github repo can be cloned locally be executing the command below:
+* Github repo can be cloned locally be executing the command below:
 .........
 ```
 git clone https://github.com/anismt/4WW3Project1
