@@ -1,5 +1,13 @@
 
 /* Here we are specifying the border property */
+
+.vidRab{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 27%;
+}
+
 table,
 th,
 td {
