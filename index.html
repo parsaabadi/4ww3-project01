@@ -249,6 +249,11 @@
                                  <p>You have got to try their milkshakes, the best.</p>
                               </div>
                               <div class="posMap"><img src="img/map.png" alt="mapOfPlace"></div>
+                              <div>
+                                 <video width="320" height="240" controls>
+                                    <source src="./sampleVideo/samVid.mp4" type="video/mp4">
+                                  </video>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -306,6 +311,12 @@
                               </div>
                               <div>
                                  <label for="img">Upload Image:</label> <input type="file" id="img" name="img" accept="image/*"> <input type="submit"> <!-- object html5 element using file type to allow file upload, no js at this point -->
+                              </div>
+                              <div>
+                                 <input type="file" name="file" onchange="selectedVideo(this);"/>
+                                 <video autopla id="video" controls>
+                                    <source id="source" type="video/mp4">
+                                 </video>
                               </div>
                            </div>
                         </div>
