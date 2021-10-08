@@ -15,16 +15,16 @@ Simple overview of use/purpose.
 
 ### Access
 
-* The website can be accessed through the IP address: 
-Github repo can be cloned locally be executing the command:
+* The website can be accessed through the IP address: http://18.222.10.192/
+*Github repo can be cloned locally be executing the command below:
 .........
 ```
-git clone ..........
+git clone https://github.com/anismt/4WW3Project1
 ```
 
 ## Viewing
 
-* Individual source file can be viewed through our group's github:.........
+* Individual source file can be viewed through our group's github: https://github.com/anismt/4WW3Project1
 * Alternatively, you can view individual file through the cloned repo.
 
 
