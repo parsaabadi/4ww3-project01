@@ -35,6 +35,9 @@ Contributors names and contact info
 Parsa Abadi - abadip1
 Mohammad-Anees Tariq (Anis) - tariqm16
 
+## Notes:
+* Finder Icon has the serach tool and filter incorporated in it upon clicking, however that function is yet to be implemented for this part.
+
 ## Acknowledgments
 
 Bootstrap template used:
