@@ -4,7 +4,7 @@ Simple overview of use/purpose.
 
 ## Description
 
- A website that allows users to browse and contribute reviews of   geographically based objects.
+ A website that allows users to browse and contribute reviews of geographically based objects. Page shows sample search result.
 
 ## Getting Started
 
@@ -32,13 +32,19 @@ git clone https://github.com/anismt/4WW3Project1
 
 Contributors names and contact info
 
-* Parsa Abadi - abadip1
-* Mohammad-Anees Tariq (Anis) - tariqm16
+* Parsa Abadi - abadip1 - 400176648
+* Mohammad-Anees Tariq (Anis) - tariqm16 - 400180258
 
 ## Notes:
 * Finder Icon has the serach tool and filter incorporated in it upon clicking, however that function is yet to be implemented for this part.
 * All html comments are in index file to avoid repetition.
 * Our css file comments are located in styles.css
+
+## Add-on
+
+Add-on for project 1
+
+* We worked on both add-on parts
 
 ## Acknowledgments
 
