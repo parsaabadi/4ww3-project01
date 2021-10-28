@@ -183,3 +183,9 @@ input[type='submit'], label {
 	margin-top: 1rem;
 	display: block;
 }
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}

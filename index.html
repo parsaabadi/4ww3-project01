@@ -330,24 +330,25 @@
                      <div class="container">
                         <div class="row">
                            <div class="sec-title text-center wow animated fadeInDown">
-                              <h1>Registration Page</h1>
-                              <div>
-                                 <label for="username"><b>Username:</b></label> <input type="text" id="username" name="username"> <!-- object html5 element using text type for username input -->
-                              </div>
-                              <div>
-                                 <label for="pass"><b>Password (8 characters minimum):</b></label> <input type="password" id="pass" name="password" minlength="8" required=""> <!-- object html5 element using password type with min 8 length -->
-                              </div>
-                              <label>Are you over the age of 18? <input type="checkbox"></label>
-                              <p>Select Gender Type:</p>
-                              <div>
-                                 <!-- object html5 element using radio type and unique to only allow one selection from user -->
-                                 <input type="radio" id="male" name="gen" value="male" checked> <label for="male">Male</label>
-                              </div>
-                              <div>
-                                 <input type="radio" id="female" name="gen" value="female"> <label for="female">Female</label>
-                              </div>
-                              <div>
-                                 <input type="radio" id="other" name="gen" value="other"> <label for="other">Other</label>
+                              <form class="form" id="form">
+                                 <h1>Registration Page</h1>
+                                    <label for="username"><b>Username:</b></label> <input type="text" id="username" name="username"> <!-- object html5 element using text type for username input -->
+                                    <label for="pass"><b>Password (8 characters minimum):</b></label> <input type="password" id="pass" name="password" minlength="8" required=""> <!-- object html5 element using password type with min 8 length -->
+                                 <label>Are you over the age of 18? <input type="checkbox"></label>
+                                 <p>Select Gender Type:</p>
+                                 <div>
+                                    <!-- object html5 element using radio type and unique to only allow one selection from user -->
+                                    <input type="radio" id="male" name="gen" value="male" checked> <label for="male">Male</label>
+                                 </div>
+                                 <div>
+                                    <input type="radio" id="female" name="gen" value="female"> <label for="female">Female</label>
+                                 </div>
+                                 <div>
+                                 <div>
+                                    <input type="radio" id="other" name="gen" value="other"> <label for="other">Other</label>
+                                 </div>
+                                    <button>Submit</button>
+                                 </form>
                               </div>
                            </div>
                         </div>
