@@ -15,14 +15,14 @@ function checkInputs() {
 
 
     if(usernameValue === ''){
-        setErrorFor(username, 'Username cannot be blank')
+        setErrorFor(username, 'Username cannot be blank');
     }
     else {
         setSuccessFor(username);
     }
 
     if(passwordValue === ''){
-        setErrorFor(username, 'Password cannot be blank')
+        setErrorFor(username, 'Password cannot be blank');
     }
     else {
         setSuccessFor(username);
@@ -34,7 +34,7 @@ function checkInputs() {
 function setErrorFor(input, message){
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
-    formControl.className = 'form-control error'
+    formControl.className = 'form-control error';
     small.innerText = message;
 
 }
@@ -42,6 +42,4 @@ function setErrorFor(input, message){
 function setSuccessFor(input){
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
-    
-
 }
