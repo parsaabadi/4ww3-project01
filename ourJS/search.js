@@ -11,4 +11,8 @@ const errorCallback = (error) => {
 
 }
 
-navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+    enableHighAccuracy: true,
+    timeout: 5000
+});
+
