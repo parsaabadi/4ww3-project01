@@ -20,24 +20,6 @@ const displaySearch = async () => {
 };
 
 
-
-const successCallback = (position) => {
-
-    console.log(position);
-
-};
-
-const errorCallback = (error) => {
-
-    console.error(error);
-
-};
-
-navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
-    enableHighAccuracy: true,
-    timeout: 5000
-});
-
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -57,3 +39,21 @@ function filterFunction() {
     }
   }
 }
+
+
+
+$('#location-button').click(function(){
+        
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position){
+          console.log(position);
+          $.get( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&sensor=false", function(data) {
+            console.log(data);
+          })
+          var img = new Image();
+          img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + position.coords.latitude + "," + position.coords.longitude + "&zoom=13&size=800x400&sensor=false";
+          $('#output').html(img);
+        });
+        
+    }
+});
