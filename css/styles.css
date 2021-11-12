@@ -285,12 +285,7 @@ input[type='submit'], label {
   }
   
 
-  
-  .form-control input:focus {
-	  outline: 0;
-	  border-color: #777;
-  }
-  
+
   .form-control.success input {
 	  border-color: #2ecc71;
   }
@@ -319,7 +314,7 @@ input[type='submit'], label {
   .form-control small {
 	  color: #e74c3c;
 	  position: absolute;
-	  bottom: 0;
+	  bottom: -10px;
 	  left: 0;
 	  visibility: hidden;
   }
