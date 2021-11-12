@@ -1,23 +1,84 @@
-const searchList = document.getElementById('searchList');
+const objects = [
+    {name: 'Pinks Burger Place'},
+    {name: 'Subway'},
+    {name: 'Basilique'},
+    {name: 'Burrito Bandidos'},
+    {name: 'Sobeys'},
+    {name: 'McDonalds'},
+    {name: 'Burger King'},
+    {name: 'Sobeys'},
+];
 
-const loadSearch = async () => {
-    try{
-        const res = await fetch('');
-        let hpSearch = await res.json();
-        displaySearch(hpSearch);
-        console.log(hpSearch);
-    } catch (err){
-        console.error(err);
+const list = document.getElementById('list');
+
+function setList(things){
+
+    clearList();
+    for (const object of things){
+        const item = document.createElement('li');
+        const text = document.createTextNode(object.name)
+        item.appendChild(text);
+        list.appendChild(item);
     }
-};
+    if (group.length === 0){
+        setNoResults();
+    }
 
-const displaySearch = async () => {
+}
+
+function clearList() {
+
+    while (list.firstChild) {
+
+        list.removeChild(list.firstChild);
+
+    }
+
+}
+
+function setNoResults() {
+    const item = document.createElement('li');
+    const text = document.createTextNode("No results found")
+    item.appendChild(text);
+    list.appendChild(item);
+
+}
+
+const searchInput = document.getElementById('search');
+
+function getRelevancy(value, searchTerm){
+
+    if (value === searchTerm){
+        return 2;
+    } else if (value.startsWtih(searchTerm)){
+        return 1;
+    } else{
+        return 0;
+    }
+
+}
+
+searchInput.addEventListener('input', (event) => {
+
+    let value = event.target.value;
+
+    if (value && value.trim().length > 0){
+        value = value.trim().toLowerCase();
+        setList(object.filter(object =>{
+            return object.name.includes(value)
+        }).sort((objectA, objectB) =>{
+            return getRelevancy(objectB.name,value) - getRelevancy(objectA.name,value);
+        }));
+    } else {
+        clearList();
+    }
+});
 
 
 
 
 
-};
+
 
 
 function myFunction() {
@@ -26,7 +87,7 @@ function myFunction() {
 
 function filterFunction() {
   var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
+  input = document.getElementById("search");
   filter = input.value.toUpperCase();
   div = document.getElementById("myDropdown");
   a = div.getElementsByTagName("a");

@@ -139,14 +139,21 @@
                               <p class="wow animated bounceInRight">Please click on the finder icon to progress accordingly.</p>
                            </div>
                            <p>Dont forget to use the search tool below</p>
+
+                           <button id="location-button">Get User Location</button>
+
+
                            <div class="dropdown">
-                              <button id="location-button">Get User Location</button>
                               <button onclick="myFunction()" class="dropbtn">Finder</button>
                               <div id="myDropdown" class="dropdown-content">
-                                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                                <a href="#about">By Name</a>
-                                <a href="#base">By Rating</a>
-                                <a href="#base">By Location</a>
+
+                                <input autofocus placeholder="Search.." class="form-control" type="text" autocomplete="off" name="search" id="search" onkeyup="filterFunction()">
+
+                                <ul class="list-group" id="list"></ul>
+
+                                <a href="#name">By Name</a>
+                                <a href="#rating">By Rating</a>
+                                <a href="#location">By Location</a>
                               </div>
                             </div>
                         </div>
@@ -263,7 +270,10 @@
                               </video>
                            </div>
                         </div>
+
+
                      </div>
+
                   </section>
                   <!-- end individual object section -->
                   <!-- Result sample section -->
