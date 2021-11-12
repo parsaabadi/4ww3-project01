@@ -262,8 +262,36 @@
                                  <p><span>Parsa Abadi.</span> Customer at Pink's Burger place.</p>
                                  <p>You have got to try their milkshakes, the best.</p>
                               </div>
-                              <div class="posMap"><img src="img/map.png" alt="mapOfPlace"></div>
+                             <!-- <div class="posMap"><img src="img/map.png" alt="mapOfPlace"></div>-->
                            </div>
+                           <style >
+ 
+ 
+ 
+                              #map {
+    
+                                 height: 500px
+                              }
+    
+    
+    
+    
+                              </style>
+    
+    
+    
+     </head>
+     <body>
+       <div id="map"></div>
+    
+       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+       <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvANyvV00l4NVZWly1YQzEKbo94GY4dts&callback=initMap&v=weekly"
+         async
+       ></script>
+     </body>
+
+
                            <div class="vidRab">
                               <video width="320" height="240" controls>
                                  <source src="./sampleVideo/samVid.mp4" type="video/mp4">
