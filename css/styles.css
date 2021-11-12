@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
 /* Here we are specifying the border property and display behaviour as a block element */
 .vidRab{
 	display: block;
@@ -255,8 +257,7 @@ input[type='submit'], label {
   .show {display: block;}
 
 
-  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
   
   * {
 	  box-sizing: border-box;
@@ -361,4 +362,8 @@ input[type='submit'], label {
       }
    
 
+                              
+#map {
+      height: 500px
+    }
 
