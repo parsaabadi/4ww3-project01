@@ -139,26 +139,19 @@
                               <p class="wow animated bounceInRight">Please click on the finder icon to progress accordingly.</p>
                            </div>
                            <p>Dont forget to use the search tool below</p>
-
                            <button id="location-button">Get User Location</button>
-
-
                            <div class="dropdown">
                               <button onclick="myFunction()" class="dropbtn">Finder</button>
                               <div id="myDropdown" class="dropdown-content">
-
-                                <input autofocus placeholder="Search.." class="form-control" type="text" autocomplete="off" name="search" id="search" onkeyup="filterFunction()">
-
-                                <ul class="list-group" id="list"></ul>
-
-                                <a href="#name">By Name</a>
-                                <a href="#rating">By Rating</a>
-                                <a href="#location">By Location</a>
+                                 <input autofocus placeholder="Search.." class="form-control" type="text" autocomplete="off" name="search" id="search" onkeyup="filterFunction()">
+                                 <ul class="list-group" id="list"></ul>
+                                 <a href="#name">By Name</a>
+                                 <a href="#rating">By Rating</a>
+                                 <a href="#location">By Location</a>
                               </div>
-                            </div>
+                           </div>
                         </div>
                      </div>
-
                   </section>
                   <!-- end Service section -->
                   <!-- Individual object section section -->
@@ -262,182 +255,164 @@
                                  <p><span>Parsa Abadi.</span> Customer at Pink's Burger place.</p>
                                  <p>You have got to try their milkshakes, the best.</p>
                               </div>
-                             <!-- <div class="posMap"><img src="img/map.png" alt="mapOfPlace"></div>-->
+                              <!-- <div class="posMap"><img src="img/map.png" alt="mapOfPlace"></div>-->
                            </div>
                            <style >
- 
- 
- 
                               #map {
-    
-                                 height: 500px
+                              height: 500px
                               }
-    
-    
-    
-    
-                              </style>
-    
-    
-    
-     </head>
-     <body>
-       <div id="map"></div>
-    
-       <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-       <script
-         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvANyvV00l4NVZWly1YQzEKbo94GY4dts&callback=initMap&v=weekly"
-         async
-       ></script>
-     </body>
-
-
-                           <div class="vidRab">
-                              <video width="320" height="240" controls>
-                                 <source src="./sampleVideo/samVid.mp4" type="video/mp4">
-                              </video>
-                           </div>
+                           </style>
+                           </head>
+                           <body>
+                              <div id="map"></div>
+                              <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                              <script
+                                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvANyvV00l4NVZWly1YQzEKbo94GY4dts&callback=initMap&v=weekly"
+                                 async
+                                 ></script>
+            </body>
+            <div class="vidRab">
+            <video width="320" height="240" controls>
+            <source src="./sampleVideo/samVid.mp4" type="video/mp4">
+            </video>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- end individual object section -->
+            <!-- Result sample section -->
+            <section id="testimonials" class="parallax">
+            <div class="overlay">
+            <div class="container">
+            <div class="row">
+            <div class="sec-title text-center white wow animated fadeInDown">
+            <h1>Result Sample Page</h1>
+            </div>
+            <h2>Food Places Near Me</h2>
+            <table>
+            <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Location</th>
+            </tr>
+            <tr>
+            <td>Pink's Burger</td>
+            <td>905-188-1467</td>
+            <th>1.2km away</th>
+            </tr>
+            <tr>
+            <td>Subway</td>
+            <td>905-878-2347</td>
+            <th>2.3km away</th>
+            </tr>
+            </table>
+            <img src="pic/mapofPinks.png" alt="Map of Pinks"> <img src="pic/mapofPinks.png" alt="Map of Subway ">
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- end result sample section -->
+            <!-- Object submission page -->
+            <section id="price">
+            <!-- linking id to price in css files -->
+            <div class="container">
+            <!-- below are referring to classes created to get their attributes -->
+            <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+            <h1>Object Submissions Page</h1>
+            <!-- highest level heading (major) -->
+            <div>
+            <label for="username"><b>Object Name:</b></label> <input type="text" id="usernames" name="username"> <!-- object html5 element using text type -->
+            </div>
+            <div>
+            <label for="description"><b>Description:</b></label> <input type="text" id="description" name="description"> <!-- object html5 element using text type -->
+            </div>
+            <div>
+            <label for="location"><b>Location (Latitude, Longitude):</b></label> <input type="text" id="location" name="location"> <!-- object html5 element using text type -->
+            </div>
+            <div>
+            <label for="img">Upload Image:</label> <input type="file" id="img" name="img" accept="image/*"> <input type="submit"> <!-- object html5 element using file type to allow file upload, no js at this point -->
+            </div>
+            <div>
+            <input type="file" name="file" onchange="selectedVideo(this);"/>
+            <video autoplay id="video" controls>
+            <source src="/./.:0" id="source" type="video/mp4">
+            </video>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- end object submission page -->
+            <!-- Registration section -->
+            <section id="contact">
+            <div class="container">
+            <div class="row">
+            <div class="sec-title text-center wow animated fadeInDown">
+            <form class="form" id="form">
+            <h1>Registration Page</h1>
+            <label for="username"><b>Username:</b></label> <input type="text" id="username" name="username"> <!-- object html5 element using text type for username input -->
+            <label for="pass"><b>Password (8 characters minimum):</b></label> <input type="password" id="pass" name="password" minlength="8" required=""> <!-- object html5 element using password type with min 8 length -->
+            <label>Are you over the age of 18? <input type="checkbox"></label>
+            <p>Select Gender Type:</p>
+            <div>
+            <!-- object html5 element using radio type and unique to only allow one selection from user -->
+            <input type="radio" id="male" name="gen" value="male" checked> <label for="male">Male</label>
+            </div>
+            <div>
+            <input type="radio" id="female" name="gen" value="female"> <label for="female">Female</label>
+            </div>
+            <div>
+            <div>
+            <input type="radio" id="other" name="gen" value="other"> <label for="other">Other</label>
+            </div>
+            <button>Submit</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- end registration section -->
+            </main>
+            <footer id="footer">
+               <div class="container">
+                  <div class="row text-center">
+                     <div class="footer-content">
+                        <!-- referring to css style -->
+                        <div class="wow animated fadeInDown">
+                           <p>Sign Up to YekYak to recieve cool updates</p>
                         </div>
-
-
-                     </div>
-
-                  </section>
-                  <!-- end individual object section -->
-                  <!-- Result sample section -->
-                  <section id="testimonials" class="parallax">
-                     <div class="overlay">
-                        <div class="container">
-                           <div class="row">
-                              <div class="sec-title text-center white wow animated fadeInDown">
-                                 <h1>Result Sample Page</h1>
-                              </div>
-                              <h2>Food Places Near Me</h2>
-                              <table>
-                                 <tr>
-                                    <th>Company</th>
-                                    <th>Contact</th>
-                                    <th>Location</th>
-                                 </tr>
-                                 <tr>
-                                    <td>Pink's Burger</td>
-                                    <td>905-188-1467</td>
-                                    <th>1.2km away</th>
-                                 </tr>
-                                 <tr>
-                                    <td>Subway</td>
-                                    <td>905-878-2347</td>
-                                    <th>2.3km away</th>
-                                 </tr>
-                              </table>
-                              <img src="pic/mapofPinks.png" alt="Map of Pinks"> <img src="pic/mapofPinks.png" alt="Map of Subway ">
+                        <form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+                           <!-- animation for twitter icon that flies -->
+                           <div class="input-field">
+                              <input type="email" class="subscribe form-control" placeholder="Please input your email here."><!-- email type footer that allows user to input email -->
+                              <button type="submit" class="submit-icon">
+                              <i class="fa fa-paper-plane fa-lg"></i>
+                              </button>
                            </div>
-                        </div>
-                     </div>
-                  </section>
-                  <!-- end result sample section -->
-                  <!-- Object submission page -->
-                  <section id="price">
-                     <!-- linking id to price in css files -->
-                     <div class="container">
-                        <!-- below are referring to classes created to get their attributes -->
-                        <div class="row">
-                           <div class="sec-title text-center wow animated fadeInDown">
-                              <h1>Object Submissions Page</h1>
-                              <!-- highest level heading (major) -->
-                              <div>
-                                 <label for="username"><b>Object Name:</b></label> <input type="text" id="usernames" name="username"> <!-- object html5 element using text type -->
-                              </div>
-                              <div>
-                                 <label for="description"><b>Description:</b></label> <input type="text" id="description" name="description"> <!-- object html5 element using text type -->
-                              </div>
-                              <div>
-                                 <label for="location"><b>Location (Latitude, Longitude):</b></label> <input type="text" id="location" name="location"> <!-- object html5 element using text type -->
-                              </div>
-                              <div>
-                                 <label for="img">Upload Image:</label> <input type="file" id="img" name="img" accept="image/*"> <input type="submit"> <!-- object html5 element using file type to allow file upload, no js at this point -->
-                              </div>
-                              <div>
-                                 <input type="file" name="file" onchange="selectedVideo(this);"/>
-                                 <video autoplay id="video" controls>
-                                    <source src="/./.:0" id="source" type="video/mp4">
-                                 </video>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </section>
-                  <!-- end object submission page -->
-                  <!-- Registration section -->
-                  <section id="contact">
-                     <div class="container">
-                        <div class="row">
-                           <div class="sec-title text-center wow animated fadeInDown">
-                              <form class="form" id="form">
-                                 <h1>Registration Page</h1>
-                                    <label for="username"><b>Username:</b></label> <input type="text" id="username" name="username"> <!-- object html5 element using text type for username input -->
-                                    <label for="pass"><b>Password (8 characters minimum):</b></label> <input type="password" id="pass" name="password" minlength="8" required=""> <!-- object html5 element using password type with min 8 length -->
-                                 <label>Are you over the age of 18? <input type="checkbox"></label>
-                                 <p>Select Gender Type:</p>
-                                 <div>
-                                    <!-- object html5 element using radio type and unique to only allow one selection from user -->
-                                    <input type="radio" id="male" name="gen" value="male" checked> <label for="male">Male</label>
-                                 </div>
-                                 <div>
-                                    <input type="radio" id="female" name="gen" value="female"> <label for="female">Female</label>
-                                 </div>
-                                 <div>
-                                 <div>
-                                    <input type="radio" id="other" name="gen" value="other"> <label for="other">Other</label>
-                                 </div>
-                                    <button>Submit</button>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </section>
-                  <!-- end registration section -->
-               </main>
-               <footer id="footer">
-                  <div class="container">
-                     <div class="row text-center">
-                        <div class="footer-content">
-                           <!-- referring to css style -->
-                           <div class="wow animated fadeInDown">
-                              <p>Sign Up to YekYak to recieve cool updates</p>
-                           </div>
-                           <form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-                              <!-- animation for twitter icon that flies -->
-                              <div class="input-field">
-                                 <input type="email" class="subscribe form-control" placeholder="Please input your email here."><!-- email type footer that allows user to input email -->
-                                 <button type="submit" class="submit-icon">
-                                 <i class="fa fa-paper-plane fa-lg"></i>
-                                 </button>
-                              </div>
-                           </form>
-                           <p>Copyright &copy; 2020-2021</p>
-                        </div>
+                        </form>
+                        <p>Copyright &copy; 2020-2021</p>
                      </div>
                   </div>
-               </footer>
-               <!-- Essential jQuery Plugins
-                  ================================================== -->
-               <!-- Main jQuery -->
-               <script src="js/jquery-1.11.1.min.js"></script> <!-- Twitter Bootstrap -->
-               <script src="js/bootstrap.min.js"></script> <!-- Single Page Nav -->
-               <script src="js/jquery.singlePageNav.min.js"></script> <!-- jquery.fancybox.pack -->
-               <script src="js/jquery.fancybox.pack.js"></script> <!-- Owl Carousel -->
-               <script src="js/owl.carousel.min.js"></script> <!-- jquery easing -->
-               <script src="js/jquery.easing.min.js"></script> <!-- Fullscreen slider -->
-               <script src="js/jquery.slitslider.js"></script> 
-               <script src="js/jquery.ba-cond.min.js"></script> <!-- onscroll animation -->
-               <script src="js/wow.min.js"></script> <!-- Custom Functions -->
-               <script src="js/main.js"></script>
-               <script src="ourjs/search.js"></script>
-               <script src="ourjs/registration.js"></script>
-               <script src="ourjs/submission.js"></script>
-               <script src="ourjs/sampIndObjPage.js"></script>
-
+               </div>
+            </footer>
+            <!-- Essential jQuery Plugins
+               ================================================== -->
+            <!-- Main jQuery -->
+            <script src="js/jquery-1.11.1.min.js"></script> <!-- Twitter Bootstrap -->
+            <script src="js/bootstrap.min.js"></script> <!-- Single Page Nav -->
+            <script src="js/jquery.singlePageNav.min.js"></script> <!-- jquery.fancybox.pack -->
+            <script src="js/jquery.fancybox.pack.js"></script> <!-- Owl Carousel -->
+            <script src="js/owl.carousel.min.js"></script> <!-- jquery easing -->
+            <script src="js/jquery.easing.min.js"></script> <!-- Fullscreen slider -->
+            <script src="js/jquery.slitslider.js"></script> 
+            <script src="js/jquery.ba-cond.min.js"></script> <!-- onscroll animation -->
+            <script src="js/wow.min.js"></script> <!-- Custom Functions -->
+            <script src="js/main.js"></script>
+            <script src="ourjs/search.js"></script>
+            <script src="ourjs/registration.js"></script>
+            <script src="ourjs/submission.js"></script>
+            <script src="ourjs/sampIndObjPage.js"></script>
             </body>
          </html>
