@@ -1,21 +1,20 @@
 const objects = [
-    {name: 'Pinks Burger Place'},
-    {name: 'Subway'},
-    {name: 'Basilique'},
-    {name: 'Burrito Bandidos'},
-    {name: 'Sobeys'},
-    {name: 'McDonalds'},
-    {name: 'Burger King'},
-    {name: 'Sobeys'},
+    {name: 'pinks'},
+    {name: 'subway'},
+    {name: 'basilique'},
+    {name: 'burritos'},
+    {name: 'sobeys'},
+    {name: 'mcdonalds'},
+    {name: 'burgers'},
 ];
 
 const list = document.getElementById('list');
 
-function setList(things){
-
+function setList(objects){
     clearList();
-    for (const object of things){
+    for (const object of objects){
         const item = document.createElement('li');
+        item.classList.add('list-group-item')
         const text = document.createTextNode(object.name)
         item.appendChild(text);
         list.appendChild(item);
@@ -64,7 +63,7 @@ searchInput.addEventListener('input', (event) => {
 
     if (value && value.trim().length > 0){
         value = value.trim().toLowerCase();
-        setList(object.filter(object =>{
+        setList(objects.filter(object =>{
             return object.name.includes(value)
         }).sort((objectA, objectB) =>{
             return getRelevancy(objectB.name,value) - getRelevancy(objectA.name,value);
