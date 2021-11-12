@@ -102,7 +102,7 @@ function filterFunction() {
 
 
 
-$('#location-button').click(function(){
+$('#location-button2').click(function(){
         
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position){
