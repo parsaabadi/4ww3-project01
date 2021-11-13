@@ -1,5 +1,6 @@
 /*
-initializes map
+initializes map functions, we do the same thing as individual object but add custom markers,
+for both maps
 */
 
 function initMap() {
