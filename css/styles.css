@@ -451,7 +451,12 @@ glow for ever and in alternate order.*/
 /*Here we specify the height of the map to be displayed as id	*/
 
 #map01 {
-	height: 500px
+	height: 500px;
+	
+}
+#map02 {
+	height: 500px;
+	
 }
 
 
@@ -466,30 +471,34 @@ glow for ever and in alternate order.*/
 	transition: 0.8s ease-out;
 }
 
-.card{
-	width: 18rem;
-	position: relative;
-	border: 1px solid black;
-
+.animated00:hover {
+	background-position: -100%;
 }
 
-.card-text-center{
-	width: 18rem;
-	position: relative;
-	border: 1px solid black;
-
-}
-
-.card-text-right{
-	width: 18rem;
-	position: relative;
-	border: 1px solid black;
-
-}
 
 .checked {
 	color: orange;
   }
-.animated00:hover {
-	background-position: -100%;
+  
+.card{
+	
+	
+	color: #FF0000;
+	
+
 }
+
+.card-text-center{
+	
+	color: #FF0000;
+
+	
+
+}
+
+.card-text-right{
+
+	color: #FF0000;
+
+	
+	}
