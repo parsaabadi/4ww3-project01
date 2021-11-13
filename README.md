@@ -15,7 +15,7 @@ Simple overview of use/purpose.
 
 ### Access
 
-* The website can be accessed through the IP address: https://anismt.github.io/4WW3Project1/
+* The website can be accessed through the address: https://anismt.github.io/4WW3Project1/
 * We hosted on github page 
 * Github repo can be cloned locally be executing the command below:
 
