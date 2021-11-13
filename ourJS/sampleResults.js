@@ -12,4 +12,4 @@ function initMap() {
       position: subwayLoco,
       map,
     });
-  }
+}
