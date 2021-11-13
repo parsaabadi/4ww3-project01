@@ -452,11 +452,10 @@ glow for ever and in alternate order.*/
 
 #map01 {
 	height: 500px;
-	
 }
+
 #map02 {
 	height: 500px;
-	
 }
 
 
@@ -470,35 +469,24 @@ glow for ever and in alternate order.*/
 	-webkit-text-fill-color: transparent;
 	transition: 0.8s ease-out;
 }
-
+/*Below are the configuration for the review on result sample page using the same
+techniques as before*/
 .animated00:hover {
 	background-position: -100%;
 }
 
-
 .checked {
 	color: orange;
-  }
-  
-.card{
-	
-	
-	color: #FF0000;
-	
-
 }
 
-.card-text-center{
-	
+.card {
 	color: #FF0000;
-
-	
-
 }
 
-.card-text-right{
-
+.card-text-center {
 	color: #FF0000;
+}
 
-	
-	}
+.card-text-right {
+	color: #FF0000;
+}
