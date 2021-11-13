@@ -10,8 +10,8 @@ function initMap() {
    }
 
 /* 
-Declares maps
-
+Declares maps, refers to id created in css, we create a function that initializes the specifications
+of the map, when marker is clicked, the specs for that marker are displayed.
 */
 var map = new google.maps.Map(document.getElementById('map01'), options);
 var map02 = new google.maps.Map(document.getElementById('map02'), options);
@@ -33,7 +33,11 @@ function addMarker(prop) {
    }
    
 }
-
+/* 
+Declares maps, refers to id created in css, we create a function that initializes the specifications
+of the map, when marker is clicked, the specs for that marker are displayed. This is for the sample
+result map using the api key again.
+*/
 function addMarker02(prop) {
    var marker = new google.maps.Marker({
       position: prop.coordinates, // Passing the coordinates
@@ -50,7 +54,9 @@ function addMarker02(prop) {
       });
    }
 }
-
+/* 
+These are the marker location and specs when clicked, content shows.
+*/
 addMarker({
    coordinates:{lat: 43.25772918691246,lng: -79.91895668252349},
    content:'<h4>Pinks,1335 Main St W, Hamilton, ON L8S 1C6</h4>'
