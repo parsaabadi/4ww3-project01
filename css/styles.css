@@ -355,10 +355,38 @@ input[type='submit'], label {
         }
        
       }
+      
+       .animation03  {
+        
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1.5s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 20px #0000FF, 0 0 30px #9554b3, 0 0 30px #000000, 0 0 40px #000000, 
+                       0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #000000;
+        }
+       
+      }
    
 
                               
-#map {
+
+#map01 {
       height: 500px
     }
+    
+    .animated00 {
+ text-decoration: none;
+ background: linear-gradient(to left, #CCC 50%, #FF5858 50%, #CC2E5D);
+ background-size: 200%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ transition: 0.8s ease-out;
+}
+
+.animated00:hover {
+ background-position: -100%;
+}
 
