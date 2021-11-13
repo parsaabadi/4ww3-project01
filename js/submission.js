@@ -2,7 +2,7 @@ let map;
 
 /*
 
-Map declaration
+Map declaration and shows lat and long
 */
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -12,14 +12,14 @@ function initMap() {
 }
 
 /* 
-Dropdown menu
+shows dropdown checks classlist and toggles for show
 */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
 /* 
-Dropdown menu
+filterfunction, here we for loop through the text and check to see what is typed
 */
 
 function filterFunction() {
@@ -38,8 +38,8 @@ function filterFunction() {
   }
 }
 
-/*
-Gets user location
+/* 
+Gets user location using google maps api
 */
 
 $('#location-button').click(function(){

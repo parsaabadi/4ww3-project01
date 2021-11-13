@@ -1,6 +1,6 @@
 
 /* 
-Declartion of search terms
+Declartion of search terms, made a constant and added objects
 */
 const objects = [
     {name: 'pinks'},
@@ -13,12 +13,13 @@ const objects = [
 ];
 
 /* 
-Gathers list from index.html
+Gathers list from index.html 
 */
 const list = document.getElementById('list');
 
 /*
 Here we make a function to retrive the name of each object, if none, no results
+
 */
 function setList(objects){
     clearList();
@@ -36,7 +37,7 @@ function setList(objects){
 }
 
 /*
-Empties list
+Empties list, removes first element
 */
 function clearList() {
 
@@ -59,7 +60,7 @@ function setNoResults() {
 
 }
 /* 
-Gets search 
+Gets search from index.html
 */
 const searchInput = document.getElementById('search');
 
@@ -103,14 +104,14 @@ searchInput.addEventListener('input', (event) => {
 
 
 /* 
-shows dropdown
+shows dropdown checks classlist and toggles for show
 */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
 /* 
-filterfunction
+filterfunction, here we for loop through the text and check to see what is typed
 */
 function filterFunction() {
   var input, filter, ul, li, a, i;
@@ -130,7 +131,7 @@ function filterFunction() {
 
 
 /* 
-Gets user location
+Gets user location using google maps api
 */
 $('#location-button2').click(function(){
         
