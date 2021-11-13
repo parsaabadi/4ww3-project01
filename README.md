@@ -40,7 +40,7 @@ Contributors names and contact info
 * Finder Icon has the serach tool and filter incorporated in it upon clicking, however that function is yet to be implemented for this part.
 * All html comments are in index file to avoid repetition.
 * Our css file comments are located in styles.css
-* Our javascript comments and code are in OurJs folder.
+* Our javascript comments and code are in js folder.
 
 ## Add-on
 
