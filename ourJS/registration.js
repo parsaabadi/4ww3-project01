@@ -1,15 +1,27 @@
+
+/*
+Gets each element id from index.html
+*/
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
+
+/*
+Checks to see if submit button is clicked
+*/
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs();
 });
 
+/*
+Checks inputs, and gives error messages for each.
+
+*/
 function checkInputs() {
 	// trim to remove the whitespaces
 	const usernameValue = username.value.trim();
@@ -45,19 +57,24 @@ function checkInputs() {
 		setSuccessFor(password2);
 	}
 }
-
+/*
+Sets error
+*/
 function setErrorFor(input, message) {
 	const formControl = input.parentElement;
 	const small = formControl.querySelector('small');
 	formControl.className = 'form-control error';
 	small.innerText = message;
 }
-
+/*
+Sets success*/
 function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'form-control success';
 }
 	
+/*
+checks to see if valid email*/
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }

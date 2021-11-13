@@ -1,5 +1,9 @@
 let map;
 
+/*
+
+Map declaration
+*/
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -34.397, lng: 150.644 },
@@ -7,9 +11,16 @@ function initMap() {
   });
 }
 
+/* 
+Dropdown menu
+*/
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
+/* 
+Dropdown menu
+*/
 
 function filterFunction() {
   var input, filter, ul, li, a, i;
@@ -27,6 +38,9 @@ function filterFunction() {
   }
 }
 
+/*
+Gets user location
+*/
 
 $('#location-button').click(function(){
         

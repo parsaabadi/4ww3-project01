@@ -1,3 +1,7 @@
+
+/* 
+Declartion of search terms
+*/
 const objects = [
     {name: 'pinks'},
     {name: 'subway'},
@@ -8,8 +12,14 @@ const objects = [
     {name: 'burgers'},
 ];
 
+/* 
+Gathers list from index.html
+*/
 const list = document.getElementById('list');
 
+/*
+Here we make a function to retrive the name of each object, if none, no results
+*/
 function setList(objects){
     clearList();
     for (const object of objects){
@@ -25,6 +35,9 @@ function setList(objects){
 
 }
 
+/*
+Empties list
+*/
 function clearList() {
 
     while (list.firstChild) {
@@ -35,6 +48,9 @@ function clearList() {
 
 }
 
+/*
+No results
+*/
 function setNoResults() {
     const item = document.createElement('li');
     const text = document.createTextNode("No results found")
@@ -42,9 +58,14 @@ function setNoResults() {
     list.appendChild(item);
 
 }
-
+/* 
+Gets search 
+*/
 const searchInput = document.getElementById('search');
 
+/* 
+Displays in order of most relavant to least
+*/
 function getRelevancy(value, searchTerm){
 
     if (value === searchTerm){
@@ -56,7 +77,9 @@ function getRelevancy(value, searchTerm){
     }
 
 }
-
+/* 
+Listens for input, and shows each by relevancy
+*/
 searchInput.addEventListener('input', (event) => {
 
     let value = event.target.value;
@@ -79,11 +102,16 @@ searchInput.addEventListener('input', (event) => {
 
 
 
-
+/* 
+shows dropdown
+*/
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+/* 
+filterfunction
+*/
 function filterFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("search");
@@ -101,7 +129,9 @@ function filterFunction() {
 }
 
 
-
+/* 
+Gets user location
+*/
 $('#location-button2').click(function(){
         
     if (navigator.geolocation) {

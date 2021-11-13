@@ -1,8 +1,17 @@
+/*
+initializes map
+*/
+
 function initMap() {
    var options = {
       zoom:15,
       center: { lat:43.26103522111267, lng:-79.91918247917609} //Coordinates of Mac
    }
+
+/* 
+Declares maps
+
+*/
 var map = new google.maps.Map(document.getElementById('map01'), options);
 var map02 = new google.maps.Map(document.getElementById('map02'), options);
 
