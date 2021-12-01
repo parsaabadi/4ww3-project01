@@ -154,8 +154,6 @@
                 <input autofocus="" placeholder="Search by Name" class="form-control" type="text" autocomplete="off" name="search" id="search" onkeyup="filterFunction()">
                 <ul class="list-group" id="list"></ul>
                 <a href="#name">By Name</a>
-                <a href="#name">By Rating</a>
-                <a href="#name">By Location</a>
               </div>
             </div>
           </div>
@@ -365,28 +363,30 @@
           <div class="header">
             <h2>Registration Page</h2>
           </div>
-          <form id="form" class="form" name="form">
-            <div class="form-control">
-              <label for="username">Username</label>
-              <input type="text" placeholder="florinpop17" id="username">
-              <small>Error message</small>
-            </div>
-            <div class="form-control">
-              <label for="username">Email</label>
-              <input type="email" placeholder="a@florin-pop.com" id="email">
-              <small>Error message</small>
-            </div>
-            <div class="form-control">
-              <label for="username">Password</label>
-              <input type="password" placeholder="Password" id="password">
-              <small>Error message</small>
-            </div>
-            <div class="form-control">
-              <label for="username">Password check</label>
-              <input type="password" placeholder="Password two" id="password2">
-              <small>Error message</small>
-            </div>
-            <button>Submit</button>
+          <form action="phpFiles/registration.php" method="post">
+            <form id="form" class="form" name="form">
+              <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="anis123" id="username">
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="anistariq@hotmail.com" id="email">
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="username">Password check</label>
+                <input type="password" placeholder="Password two" id="password2">
+                <small>Error message</small>
+              </div>
+              <button>Submit</button>
+            </form>
           </form>
         </div>
       </section>
@@ -439,5 +439,10 @@
     <script src="js/sampIndObjPage.js"></script>
     <script src="js/sampleResults.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvANyvV00l4NVZWly1YQzEKbo94GY4dts&amp;callback=initMap&amp;v=weekly" async></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvANyvV00l4NVZWly1YQzEKbo94GY4dts&amp;callback=initMap&amp;v=weekly" async></script>
+
+    
+
   </body>
 </html>
