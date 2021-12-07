@@ -17,4 +17,20 @@
 		$stmt->close();
 		$conn->close();
 	}
+
+	$_SESSION['username'] = session_id();
+	$_SESSION['password'] = $row->password;
+
+
+	if(isset($_SESSION['username'])){
+		echo "<font color=red>Not logged in : <a href=login.php>Login</a>
+		<a href=signup.php>Signup</a> ";
+	}
+	else{
+		echo "font color=green>Welcome $_SESSION[username]";
+	}
+
+
+
+
 ?>
