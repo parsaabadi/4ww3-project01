@@ -32,7 +32,7 @@ $result = $s3->putObject(array(
 	$location = $_POST['location'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','APDatabase');
+	$conn = new mysqli('localhost','root','mcmaster123','APDatabase');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
