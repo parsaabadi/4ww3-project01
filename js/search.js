@@ -9,7 +9,6 @@ const objects = [
     {name: 'burritos'},
     {name: 'sobeys'},
     {name: 'mcdonalds'},
-    {name: 'burgers'},
 ];
 
 /* 
