@@ -15,8 +15,8 @@ Simple overview of use/purpose.
 
 ### Access
 
-* The website can be accessed through the address: https://anismt.github.io/4WW3Project1/
-* We hosted on github page 
+* The website can be accessed through the secure address: https://yekyak.com
+* To Be able to use user functionality, access website with username : 'user' and password : 'pass'
 * Github repo can be cloned locally be executing the command below:
 
 ```
@@ -41,6 +41,8 @@ Contributors names and contact info
 * All html comments are in index file to avoid repetition.
 * Our css file comments are located in styles.css
 * Our javascript comments and code are in js folder.
+* Respective PHP files can be located in the folder phpFiles in the main directory
+
 
 ## Add-on
 
