@@ -8,6 +8,7 @@ function initMap() {
       zoom:15,
       center: { lat:43.26103522111267, lng:-79.91918247917609} //Coordinates of Mac
    }
+}
 
 /* 
 Declares maps, refers to id created in css, we create a function that initializes the specifications
@@ -33,6 +34,7 @@ function addMarker(prop) {
    }
    
 }
+
 /* 
 Declares maps, refers to id created in css, we create a function that initializes the specifications
 of the map, when marker is clicked, the specs for that marker are displayed. This is for the sample
@@ -54,29 +56,68 @@ function addMarker02(prop) {
       });
    }
 }
+
 /* 
 These are the marker location and specs when clicked, content shows.
 */
+
 addMarker({
    coordinates:{lat: 43.25772918691246,lng: -79.91895668252349},
-   content:'<h4>Pinks,1335 Main St W, Hamilton, ON L8S 1C6</h4>'
+   content:'<h4>Pinks, 1335 Main St W, Hamilton, ON L8S 1C6</h4>'
 });
 
 addMarker({
    coordinates:{lat: 43.25816, lng: -79.9414},
   
-   content:'<h4>Subway,119 Osler Dr Unit #11, Dundas, ON L9H6X4</h4>'
+   content:'<h4>Subway, 119 Osler Dr Unit #11, Dundas, ON L9H6X4</h4>'
 });
+
+addMarker({
+   coordinates:{lat: 43.261055 ,lng: -79.907502},
+   content:'<h4>Basilique, 1065 King St W, Hamilton, ON L8S 1L8</h4>'
+});
+
+
+addMarker({
+   coordinates:{lat: 43.265322,lng: --79.949848},
+   content:'<h4>McDonalds, 10 Cootes Dr, Dundas, ON L9H 1A9</h4>'
+});
+
+
+addMarker({
+   coordinates:{lat: 43.194589,lng: -79.813639},
+   content:'<h4>Sobeys, 1770 Stone Church Rd E, Stoney Creek, ON L8J 0K5</h4>'
+});
+
+
+
 
 addMarker02({
    coordinates:{lat: 43.25772918691246,lng: -79.91895668252349},
-   content:'<h4>Pinks,1335 Main St W, Hamilton, ON L8S 1C6</h4>'
+   content:'<h4>Pinks, 1335 Main St W, Hamilton, ON L8S 1C6</h4>'
 });
 
 addMarker02({
    coordinates:{lat: 43.25816, lng: -79.9414},
   
-   content:'<h4>Subway,119 Osler Dr Unit #11, Dundas, ON L9H6X4</h4>'
+   content:'<h4>Subway, 119 Osler Dr Unit #11, Dundas, ON L9H6X4</h4>'
 });
 
-}
+addMarker02({
+   coordinates:{lat: 43.261055 ,lng: -79.907502},
+   content:'<h4>Basilique, 1065 King St W, Hamilton, ON L8S 1L8</h4>'
+});
+
+
+addMarker02({
+   coordinates:{lat: 43.265322,lng: -79.949848},
+   content:'<h4>McDonalds, 10 Cootes Dr, Dundas, ON L9H 1A9</h4>'
+});
+
+
+addMarker02({
+   coordinates:{lat: 43.194589,lng: -79.813639},
+   content:'<h4>Sobeys, 1770 Stone Church Rd E, Stoney Creek, ON L8J 0K5</h4>'
+});
+
+
