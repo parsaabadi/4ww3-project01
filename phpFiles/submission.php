@@ -1,4 +1,32 @@
 <?php
+
+use GuzzleHttp\Psr7\Stream;
+use Aws\S3\S3Client;
+require 'phpFiles/start.php';
+
+if(isset($_FILES['file'])){
+
+$file = $_FILES['file'];
+$name = $file['name'];
+
+$stream = new \GuzzleHttp\Psr7\Stream(fopen('php://input', 'r'));
+
+$result = $s3->putObject(array(
+            'Bucket' => $config['s3']['bucket'],
+            'Key' => "uploads/{$name}",
+            'ContentLength' => (int)$_SERVER['CONTENT_LENGTH'],
+            'Body' => $stream,
+            'ACL' => 'private',
+            'StorageClass' => 'STANDARD_IA',
+
+
+        ));
+
+    }
+
+
+
+
 	$username = $_POST['username'];
 	$description = $_POST['description'];
 	$location = $_POST['location'];

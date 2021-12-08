@@ -10,6 +10,27 @@
 			<![endif]-->
 <!--[if gt IE 8]>
 			<!-->
+
+        <?php
+        $authenticate = false;
+        if (isset($_SERVER['PHP_AUTH_USER']) && isset($_SERVER['PHP_AUTH_PW']))
+        {
+         $name = $_SERVER['PHP_AUTH_USER'];
+         $pass = $_SERVER['PHP_AUTH_PW'];
+         if ($name == 'user' && $pass == 'pass')
+         {
+          $authenticate = true;
+         }
+        }
+         
+        if ($authenticate==false)
+        {
+         header('WWW-Authenticate: Basic realm="Restricted Page Enter Details To Continue"');
+         header('HTTP/1.0 401 Unauthorized');
+         echo "Authentication Failed Refresh To Do It Again";
+        } 
+        
+         ?>
 <html lang="en" class="no-js">
   <!--
 				<![endif]-->
@@ -382,7 +403,7 @@
             <div class="sec-title text-center wow animated fadeInDown">
               <h1>Object Submissions Page</h1>
               <!-- highest level heading (major) -->
-              <form action="phpFiles/submission.php" method="post">
+              <form action="phpFiles/submission.php" method="post" enctype="multipart/form-data">
                 <div>
                   <label for="username">
                     <b>Object Name:</b>
@@ -408,8 +429,9 @@
                   <button>Submit</button>
                   <button id="location-button">Get User Location</button>
                   <label for="img">Upload Image:</label>
-                  <input type="file" id="img" name="img" accept="image/*">
-                  <input type="submit">
+                  
+                  <input type="file" id="img" name="file" accept="image/*">
+                  <input type="submit" value="upload">
                   <!-- object html5 element using file type to allow file upload, no js at this point -->
                 </div>
                 <div>
