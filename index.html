@@ -366,29 +366,27 @@
             <h2>Registration Page</h2>
           </div>
           <form action="phpFiles/registration.php" method="post">
-            <form id="form" class="form" name="form">
-              <div class="form-control">
-                <label for="username">Username</label>
-                <input type="text" placeholder="anis123" id="username">
-                <small>Error message</small>
-              </div>
-              <div class="form-control">
-                <label for="username">Email</label>
-                <input type="email" placeholder="anistariq@hotmail.com" id="email">
-                <small>Error message</small>
-              </div>
-              <div class="form-control">
-                <label for="username">Password</label>
-                <input type="password" placeholder="Password" id="password">
-                <small>Error message</small>
-              </div>
-              <div class="form-control">
-                <label for="username">Password check</label>
-                <input type="password" placeholder="Password two" id="password2">
-                <small>Error message</small>
-              </div>
-              <button>Submit</button>
-            </form>
+            <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" placeholder="anis123" id="username" name="username">
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Email</label>
+              <input type="email" placeholder="anistariq@hotmail.com" id="email" name="email">
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Password</label>
+              <input type="password" placeholder="Password" id="password" name="password">
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Password check</label>
+              <input type="password" placeholder="Password two" id="password2" name="password2">
+              <small>Error message</small>
+            </div>
+            <input type="submit" class="btn btn-primary">
           </form>
         </div>
       </section>
