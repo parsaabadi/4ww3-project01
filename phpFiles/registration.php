@@ -10,7 +10,7 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(usernam, email, password, password2) values(?, ?, ?, ?)");
+		$stmt = $conn->prepare("insert into registration(username, email, password, password2) values(?, ?, ?, ?)");
 		$stmt->bind_param("sssssi", $username, $email, $password, $password2);
 		$execval = $stmt->execute();
 		echo $execval;

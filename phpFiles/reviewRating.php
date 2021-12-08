@@ -63,4 +63,26 @@ https://www.webslesson.info/2021/05/how-to-create-review-rating-page-in-php-with
 	      	</div>
     	</div>
   	</div>
+	<?php
+
+	// Database connection
+	$conn = new mysqli('localhost','root','','APDatabase');
+	if($conn->connect_error){
+		echo "$conn->connect_error";
+		die("Connection Failed : ". $conn->connect_error);
+	} else {
+		$stmt = $conn->prepare("insert into registration(usernam, email, password, password2) values(?, ?, ?, ?)");
+		$stmt->bind_param("sssssi", $username, $email, $password, $password2);
+		$execval = $stmt->execute();
+		echo $execval;
+		echo "Registration successfully...";
+		$stmt->close();
+		$conn->close();
+	}
+
+	?>
+
+
+
+	  
 </div>
