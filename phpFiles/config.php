@@ -1,7 +1,10 @@
 <?php
 
 
-
+#Here we are specifying the information about our bucket on AWS,
+# details include region the bucket is hosted, teh version, key generated, secret key not 
+# displayed here for security reasons
+# and finally the name of our bucket
 
 return [ 
     's3' => [
