@@ -1,2 +1,2 @@
-//modified to accept php for authorized users
+
 AddType application/x-httpd-php5 .htm .html
