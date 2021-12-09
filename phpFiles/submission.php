@@ -1,14 +1,22 @@
 <?php
 
+# Here we first use the Guzzle stream for uploading to the bucket,
+# We extended start.php dependencies,
+# We specifiy again info for the bucket and additionally through an array,
+# We sepecify the specs for access control being set to private,
+# Uploading the key to be able upload the file
+# And finally we set storage class to standard.
+
+
 use GuzzleHttp\Psr7\Stream;
 use Aws\S3\S3Client;
 require 'phpFiles/start.php';
 
 if(isset($_FILES['file'])){
-
+# Creating file references
 $file = $_FILES['file'];
 $name = $file['name'];
-
+# Set to Read
 $stream = new \GuzzleHttp\Psr7\Stream(fopen('php://input', 'r'));
 
 $result = $s3->putObject(array(
