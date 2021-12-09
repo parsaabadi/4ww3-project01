@@ -1,4 +1,11 @@
 <?php
+	/*
+	Here, we essentially register a user and add it to the database
+	APDatabase. We keep a record of all the username email password
+	and password2. We connect to the database and in our table registation
+	we insert all values to it.
+	*/
+
 
 	// Creating variables, retrieving data from index.html, later will post the data to database
 	$username = $_POST['username'];

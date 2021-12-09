@@ -4,6 +4,10 @@ This code was helped from
 
 https://www.webslesson.info/2021/05/how-to-create-review-rating-page-in-php-with-ajax.html
 
+Here, we have a the option to let a user leave a rating for us.
+Using Php and html, we prompt the user to submit a rating as we add it
+to our database and update the page. 
+
 
 -->
 
