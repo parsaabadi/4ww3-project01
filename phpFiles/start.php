@@ -1,5 +1,5 @@
 <?php
-#Here we are using config.php to acquire configuration,
+# Here we are using config.php to acquire configuration such as key and secret key from,
 # Then we proceed to use all required dependencies for the AWS bucket,
 # Finally we create an instance for the bucket and set it specification as mentioned before
 
