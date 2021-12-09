@@ -1,4 +1,6 @@
 <?php
+
+	// Creating variables, retrieving data from index.html, later will post the data to database
 	$username = $_POST['username'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
@@ -6,10 +8,13 @@
 
 	// Database connection
 	$conn = new mysqli('localhost','root','mcmaster123','APDatabase');
+	
+	// Checking to see if a connection is made
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
+		// Inserts data into data base
 		$stmt = $conn->prepare("insert into registration(username, email, password, password2) values(?, ?, ?, ?)");
 		$stmt->bind_param("sssssi", $username, $email, $password, $password2);
 		$execval = $stmt->execute();

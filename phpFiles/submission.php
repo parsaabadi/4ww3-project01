@@ -27,16 +27,20 @@ $result = $s3->putObject(array(
 
 
 
+	// Creating variables, retrieving data from index.html, later will post the data to database
+
 	$username = $_POST['username'];
 	$description = $_POST['description'];
 	$location = $_POST['location'];
 
 	// Database connection
 	$conn = new mysqli('localhost','root','mcmaster123','APDatabase');
+	// Checking to see if a connection is made
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
+		// Inserts data into data base
 		$stmt = $conn->prepare("insert into registration(username, description, location) values(?, ?, ?)");
 		$stmt->bind_param("sssssi", $username, $description, $location);
 		$execval = $stmt->execute();

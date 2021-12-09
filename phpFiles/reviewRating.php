@@ -10,6 +10,10 @@ https://www.webslesson.info/2021/05/how-to-create-review-rating-page-in-php-with
 <!DOCTYPE HTML>
 <html>
 <head>
+	<!-- 
+	Js and styles imported
+
+	-->
     <meta charset="utf-8" />
     <title>Review & Rating</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +24,10 @@ https://www.webslesson.info/2021/05/how-to-create-review-rating-page-in-php-with
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
+	<!-- 
+	A review box where we take a review from a customer and put into the database and populate it on our website
+
+	-->
     <div class="container">
     			<div class="row">
     				<div class="col-sm-4 text-center">
@@ -45,6 +53,7 @@ https://www.webslesson.info/2021/05/how-to-create-review-rating-page-in-php-with
 	      	</div>
 	      	<div class="modal-body">
 	      		<h4 class="text-center mt-2 mb-4">
+					  <!-- All star ratings-->
 	        		<i class="fas fa-star star-light submit_star mr-1" id="submit_star_1" data-rating="1"></i>
                     <i class="fas fa-star star-light submit_star mr-1" id="submit_star_2" data-rating="2"></i>
                     <i class="fas fa-star star-light submit_star mr-1" id="submit_star_3" data-rating="3"></i>
